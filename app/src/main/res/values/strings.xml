@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Why Chat</string>
+    <string name="enter">Entrar</string>
+    <string name="sigin">Não Tem Uma Conta? Crie uma Aqui!</string>
+    <string name="insert">Cadastrar</string>
+    <string name="btn_chat">Enviar</string>
+    <string name="message">Digite a mensagem</string>
+    <string name="photo">Foto</string>
+    <string name="contacts">Contatos</string>
+    <string name="logout">Deslogar</string>
+</resources>

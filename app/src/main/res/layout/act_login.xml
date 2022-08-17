@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="0dp"
+        android:autofillHints="emailAddress"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:layout_marginStart="16dp"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:hint="Email"
+        android:textColorHint="@color/hint_text"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:paddingLeft="8dp"
+        android:autofillHints="password"
+        android:id="@+id/edit_password"
+        android:background="@drawable/bg_edittext_rounded"
+        android:layout_width="0dp"
+        android:textColorHint="@color/hint_text"
+        android:hint="Senha"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edit_email"
+        app:layout_constraintStart_toStartOf="@+id/edit_email"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="0dp"
+        android:background="@drawable/bg_buttom_rounded"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/enter"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toEndOf="@+id/edit_password"
+        app:layout_constraintStart_toStartOf="@+id/edit_password"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password" />
+
+    <TextView
+        android:id="@+id/txt_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:text="@string/sigin"
+        app:layout_constraintEnd_toEndOf="@+id/btn_enter"
+        app:layout_constraintStart_toStartOf="@+id/btn_enter"
+        app:layout_constraintTop_toBottomOf="@+id/btn_enter" />
+</androidx.constraintlayout.widget.ConstraintLayout>

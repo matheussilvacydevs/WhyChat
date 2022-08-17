@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+  <EditText
+      android:id="@+id/edit_username"
+      android:layout_width="0dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="32dp"
+      android:autofillHints="emailAddress"
+      android:background="@drawable/bg_edittext_rounded"
+      android:ems="10"
+      android:hint="Nome"
+      android:inputType="textEmailAddress"
+      android:paddingLeft="8dp"
+      android:textColorHint="@color/hint_text"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btn_selected_photo" />
+
+  <EditText
+      android:id="@+id/edit_email"
+      android:layout_width="0dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="8dp"
+      android:autofillHints="emailAddress"
+      android:background="@drawable/bg_edittext_rounded"
+      android:ems="10"
+      android:hint="Email"
+      android:inputType="textEmailAddress"
+      android:paddingLeft="8dp"
+      android:textColorHint="@color/hint_text"
+      app:layout_constraintEnd_toEndOf="@+id/edit_username"
+      app:layout_constraintStart_toStartOf="@+id/edit_username"
+      app:layout_constraintTop_toBottomOf="@+id/edit_username" />
+
+  <EditText
+      android:paddingLeft="8dp"
+      android:autofillHints="password"
+      android:id="@+id/edit_password"
+      android:background="@drawable/bg_edittext_rounded"
+      android:layout_width="0dp"
+      android:textColorHint="@color/hint_text"
+      android:hint="Senha"
+      android:layout_height="50dp"
+      android:layout_marginTop="8dp"
+      android:ems="10"
+      android:inputType="textPassword"
+      app:layout_constraintEnd_toEndOf="@+id/edit_email"
+      app:layout_constraintStart_toStartOf="@+id/edit_email"
+      app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+  <Button
+      android:id="@+id/btn_enter"
+      android:layout_width="0dp"
+      android:background="@drawable/bg_buttom_rounded"
+      android:layout_height="50dp"
+      android:layout_marginTop="32dp"
+      android:text="@string/insert"
+      android:textColor="@color/text_color"
+      app:layout_constraintEnd_toEndOf="@+id/edit_password"
+      app:layout_constraintStart_toStartOf="@+id/edit_password"
+      app:layout_constraintTop_toBottomOf="@+id/edit_password" />
+
+  <Button
+      android:id="@+id/btn_selected_photo"
+      android:layout_width="150dp"
+      android:textColor="@color/text_color"
+      android:layout_height="150dp"
+      android:background="@drawable/bg_button_img_rounded"
+      android:layout_marginTop="16dp"
+      android:text="@string/photo"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/img_photo"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      app:civ_border_width="2dp"
+      app:civ_border_color="@color/text_color"
+      app:layout_constraintEnd_toEndOf="@+id/btn_selected_photo"
+      app:layout_constraintHorizontal_bias="0.214"
+      app:layout_constraintStart_toStartOf="@+id/btn_selected_photo"
+      app:layout_constraintTop_toTopOf="@+id/btn_selected_photo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

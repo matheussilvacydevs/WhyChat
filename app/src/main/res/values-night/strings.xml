@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter">Entrar</string>
+    <string name="sigin">Não Tem Uma Conta? Crie uma Aqui!</string>
+    <string name="insert">Cadastrar</string>
+    <string name="photo">Foto</string>
+    <string name="contacts">Contatos</string>
+    <string name="logout">Deslogar</string>
+</resources>
