@@ -8,4 +8,6 @@
     <string name="photo">Foto</string>
     <string name="contacts">Contatos</string>
     <string name="logout">Deslogar</string>
+    <string name="splash_welcome">DEVELOPED</string>
+    <string name="splash_welcome2">CYBERDEVS</string>
 </resources>

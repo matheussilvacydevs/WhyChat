@@ -4,26 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".java.LoginActivity">
 
 
     <EditText
         android:id="@+id/edit_email"
         android:layout_width="0dp"
-        android:autofillHints="emailAddress"
         android:layout_height="50dp"
-        android:background="@drawable/bg_edittext_rounded"
         android:layout_marginStart="16dp"
-        android:paddingLeft="8dp"
-        android:layout_marginTop="32dp"
-        android:hint="Email"
-        android:textColorHint="@color/hint_text"
+        android:layout_marginTop="85dp"
         android:layout_marginEnd="16dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/bg_edittext_rounded"
         android:ems="10"
+        android:hint="Email"
         android:inputType="textEmailAddress"
+        android:paddingLeft="8dp"
+        android:textColorHint="@color/hint_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
         android:paddingLeft="8dp"
@@ -44,12 +44,13 @@
     <Button
         android:id="@+id/btn_enter"
         android:layout_width="0dp"
-        android:background="@drawable/bg_buttom_rounded"
         android:layout_height="50dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_buttom_rounded"
         android:text="@string/enter"
         android:textColor="@color/text_color"
         app:layout_constraintEnd_toEndOf="@+id/edit_password"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/edit_password"
         app:layout_constraintTop_toBottomOf="@+id/edit_password" />
 
@@ -57,11 +58,21 @@
         android:id="@+id/txt_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:textStyle="bold"
-        android:textColor="@color/text_color"
+        android:layout_marginBottom="32dp"
         android:text="@string/sigin"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btn_enter"
-        app:layout_constraintStart_toStartOf="@+id/btn_enter"
-        app:layout_constraintTop_toBottomOf="@+id/btn_enter" />
+        app:layout_constraintStart_toStartOf="@+id/btn_enter" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blk" />
 </androidx.constraintlayout.widget.ConstraintLayout>

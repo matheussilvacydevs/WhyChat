@@ -1,4 +1,4 @@
-package opnet.cyberdevs.whychat;
+package opnet.cyberdevs.whychat.java;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,6 +25,9 @@ import com.xwray.groupie.GroupieViewHolder;
 import com.xwray.groupie.Item;
 
 import java.util.List;
+
+import opnet.cyberdevs.whychat.R;
+import opnet.cyberdevs.whychat.java.fragments.Contact;
 
 public class MessagesActivity extends AppCompatActivity {
 

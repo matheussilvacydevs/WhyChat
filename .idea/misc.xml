@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/fabianolimas/Desktop/Why Chat/WhyChat/app/src/main/res/layout/act_contacts.xml" value="0.26458333333333334" />
+        <entry key="..\:/Users/fabianolimas/Desktop/Why Chat/WhyChat/app/src/main/res/layout/act_login.xml" value="0.26458333333333334" />
+        <entry key="..\:/Users/fabianolimas/Desktop/Why Chat/WhyChat/app/src/main/res/layout/act_messages.xml" value="0.26458333333333334" />
+        <entry key="..\:/Users/fabianolimas/Desktop/Why Chat/WhyChat/app/src/main/res/layout/act_register.xml" value="0.26458333333333334" />
+        <entry key="..\:/Users/fabianolimas/Desktop/Why Chat/WhyChat/app/src/main/res/layout/act_splash.xml" value="0.2" />
+        <entry key="..\:/Users/fabianolimas/Desktop/Why Chat/WhyChat/app/src/main/res/layout/item_from_message.xml" value="0.26458333333333334" />
+        <entry key="..\:/Users/fabianolimas/Desktop/Why Chat/WhyChat/app/src/main/res/layout/item_to_message.xml" value="0.26458333333333334" />
+        <entry key="..\:/Users/fabianolimas/Desktop/Why Chat/WhyChat/app/src/main/res/layout/item_user_message.xml" value="0.26458333333333334" />
+        <entry key="..\:/Users/fabianolimas/Desktop/Why Chat/WhyChat/app/src/main/res/menu/menu.xml" value="0.26458333333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

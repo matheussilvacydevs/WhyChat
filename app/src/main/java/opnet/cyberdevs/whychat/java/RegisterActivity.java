@@ -1,4 +1,4 @@
-package opnet.cyberdevs.whychat;
+package opnet.cyberdevs.whychat.java;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -27,6 +27,9 @@ import com.google.firebase.storage.UploadTask;
 import java.io.IOException;
 import java.util.Objects;
 import java.util.UUID;
+
+import opnet.cyberdevs.whychat.R;
+import opnet.cyberdevs.whychat.java.fragments.User;
 
 public class RegisterActivity extends AppCompatActivity {
 

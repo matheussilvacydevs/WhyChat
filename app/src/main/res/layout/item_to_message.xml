@@ -24,6 +24,8 @@
         android:background="@drawable/bg_send_msg"
         android:maxWidth="140dp"
         android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
         android:paddingLeft="10dp"
         android:text="TextView"
         app:layout_constraintEnd_toStartOf="@+id/img_message_user"

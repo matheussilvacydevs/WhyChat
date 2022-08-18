@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".java.RegisterActivity">
 
 
   <EditText
@@ -42,17 +42,17 @@
       app:layout_constraintTop_toBottomOf="@+id/edit_username" />
 
   <EditText
-      android:paddingLeft="8dp"
-      android:autofillHints="password"
       android:id="@+id/edit_password"
-      android:background="@drawable/bg_edittext_rounded"
       android:layout_width="0dp"
-      android:textColorHint="@color/hint_text"
-      android:hint="Senha"
       android:layout_height="50dp"
       android:layout_marginTop="8dp"
+      android:autofillHints="password"
+      android:background="@drawable/bg_edittext_rounded"
       android:ems="10"
+      android:hint="Senha"
       android:inputType="textPassword"
+      android:paddingLeft="8dp"
+      android:textColorHint="@color/hint_text"
       app:layout_constraintEnd_toEndOf="@+id/edit_email"
       app:layout_constraintStart_toStartOf="@+id/edit_email"
       app:layout_constraintTop_toBottomOf="@+id/edit_email" />
@@ -60,9 +60,9 @@
   <Button
       android:id="@+id/btn_enter"
       android:layout_width="0dp"
-      android:background="@drawable/bg_buttom_rounded"
       android:layout_height="50dp"
       android:layout_marginTop="32dp"
+      android:background="@drawable/bg_buttom_rounded"
       android:text="@string/insert"
       android:textColor="@color/text_color"
       app:layout_constraintEnd_toEndOf="@+id/edit_password"
@@ -72,11 +72,11 @@
   <Button
       android:id="@+id/btn_selected_photo"
       android:layout_width="150dp"
-      android:textColor="@color/text_color"
       android:layout_height="150dp"
+      android:layout_marginTop="60dp"
       android:background="@drawable/bg_button_img_rounded"
-      android:layout_marginTop="16dp"
       android:text="@string/photo"
+      android:textColor="@color/text_color"
       android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.498"
@@ -87,8 +87,9 @@
       android:id="@+id/img_photo"
       android:layout_width="150dp"
       android:layout_height="150dp"
-      app:civ_border_width="2dp"
+      android:layout_marginTop="60dp"
       app:civ_border_color="@color/text_color"
+      app:civ_border_width="2dp"
       app:layout_constraintEnd_toEndOf="@+id/btn_selected_photo"
       app:layout_constraintHorizontal_bias="0.214"
       app:layout_constraintStart_toStartOf="@+id/btn_selected_photo"

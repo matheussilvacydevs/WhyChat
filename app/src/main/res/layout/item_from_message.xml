@@ -20,6 +20,8 @@
     <TextView
         android:id="@+id/txt_msg"
         android:layout_width="200dp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
         android:layout_height="50dp"
         android:layout_marginStart="9dp"
         android:background="@drawable/bg_receiver_rounded"

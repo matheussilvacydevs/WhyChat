@@ -1,35 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="opnet.cyberdevs.whychat">
+    package="opnet.cyberdevs.whychat" >
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/img_app"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WhyChat"
-        tools:targetApi="31">
-        <activity
-            android:name=".ChatActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MessagesActivity" />
-        </activity>
-        <activity
-            android:name=".ContactsActivity"
-            android:exported="false"
-            android:label="@string/contacts">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MessagesActivity" />
-        </activity>
-        <activity
-            android:name=".MessagesActivity"
+        tools:targetApi="31" >
+        <activity android:name=".SplashActivity"
+            android:theme="@style/AppTheme.Fullscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,10 +22,37 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name=".kotlin.TermsActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".java.ChatActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".java.MessagesActivity" />
+        </activity>
+        <activity
+            android:name=".java.ContactsActivity"
+            android:exported="false"
+            android:label="@string/contacts" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".java.MessagesActivity" />
+        </activity>
+        <activity
+            android:name=".java.MessagesActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".java.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".java.LoginActivity"
             android:exported="false" />
     </application>
 

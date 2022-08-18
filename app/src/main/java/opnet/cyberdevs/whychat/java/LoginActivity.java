@@ -1,4 +1,4 @@
-package opnet.cyberdevs.whychat;
+package opnet.cyberdevs.whychat.java;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Objects;
+
+import opnet.cyberdevs.whychat.R;
 
 public class LoginActivity extends AppCompatActivity {
 

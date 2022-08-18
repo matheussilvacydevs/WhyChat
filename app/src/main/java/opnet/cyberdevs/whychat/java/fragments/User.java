@@ -1,4 +1,4 @@
-package opnet.cyberdevs.whychat;
+package opnet.cyberdevs.whychat.java.fragments;
 
 import android.os.Parcel;
 import android.os.Parcelable;

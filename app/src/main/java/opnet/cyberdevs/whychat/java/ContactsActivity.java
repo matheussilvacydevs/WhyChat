@@ -1,4 +1,4 @@
-package opnet.cyberdevs.whychat;
+package opnet.cyberdevs.whychat.java;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,6 +26,9 @@ import com.xwray.groupie.OnItemClickListener;
 
 import java.util.List;
 
+import opnet.cyberdevs.whychat.R;
+import opnet.cyberdevs.whychat.java.fragments.User;
+
 public class ContactsActivity extends AppCompatActivity {
 
     private GroupAdapter adapter;
@@ -47,7 +50,7 @@ public class ContactsActivity extends AppCompatActivity {
                 Intent intent = new Intent(ContactsActivity.this, ChatActivity.class);
 
                 UserItem  userItem = (UserItem) item;
-                intent.putExtra("user",userItem.user);
+                intent.putExtra("user", userItem.user);
 
                 startActivity(intent);
             }
